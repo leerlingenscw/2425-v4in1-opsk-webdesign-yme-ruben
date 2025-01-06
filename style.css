@@ -1,15 +1,26 @@
-<style>
 body {
-  background-color: lightblue;
+  background-color: rgb(255, 255, 255);
 }
-
 h1 {
-  color: white;
+  color: rgb(0, 0, 0);
   text-align: center;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
-
 p {
   font-family: verdana;
   font-size: 20px;
 }
-</style>
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 40px 40px 40px;
+}
+.grid-item {
+  border: 5px solid rgb(0, 4, 255);
+  text-align: center;
+  }
+
+.footer {
+  border: 5px solid rgb(0, 4, 255);
+  text-align: center;
+}
