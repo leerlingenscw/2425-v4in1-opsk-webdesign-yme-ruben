@@ -12,15 +12,32 @@ p {
 }
 .grid-container {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto auto auto auto auto;
   grid-template-rows: 40px 40px 40px;
+  grid-template-areas: 
+  'header header header'
+  'nav nav nav'
+  'article article img'
+  'article article img'
+  'footer footer footer';
 }
 .grid-item {
-  border: 5px solid rgb(0, 4, 255);
   text-align: center;
   }
 
 .footer {
-  border: 5px solid rgb(0, 4, 255);
   text-align: center;
+  grid-area: 'footer';
+}
+
+header {
+  grid-area: 'header';
+}
+
+main {
+  grid-area: 'main';
+}
+
+aside {
+  grid-area: 'sidebar';
 }
