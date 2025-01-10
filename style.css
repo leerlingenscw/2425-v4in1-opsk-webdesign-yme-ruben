@@ -12,45 +12,41 @@ p {
 }
 .grid-container {
   display: grid;
-  grid-template-columns:  auto auto auto auto;
+  grid-template-columns:  auto auto auto auto auto;
   grid-template-rows: 40px 40px 40px;
   grid-template-areas: 
-  'header header header'
-  'nav nav nav'
-  'article article img'
-  'article article img'
-  'footer footer footer';
+  "a a a"
+  "b b b"
+  "c c d"
+  "e e f"
+  "footer footer footer";
+  align-items: start;
 }
-.grid-item {
+.grid-item1 {
   text-align: center;
+  grid-area: a;
+}
+.grid-item2 {
+ text-align: center;
+ grid-area: b;
+}
+.grid-item3 {
+  text-align: center;
+  grid-area: c;
+}
+.grid-item4 {
+  text-align: center;
+  grid-area: d;
+}
+.grid-item5 {
+  text-align: center;
+  grid-area: e;
+}
+.grid-item6 {
+  text-align: center;
+  grid-area: f;
   }
-
 .footer {
   text-align: center;
   grid-area: 'footer';
-}
-
-header {
-  grid-area: 'header';
-  align-items: start;
-}
-
-main {
-  grid-area: 'main';
-}
-
-aside {
-  grid-area: 'sidebar';
-}
-.wrapper {
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  gap: 10px;
-  grid-auto-rows: 100px;
-  grid-template-areas:
-    "a a a a b b b b"
-    "a a a a b b b b"
-    "c c c c d d d d"
-    "c c c c d d d d";
-  align-items: start;
 }
