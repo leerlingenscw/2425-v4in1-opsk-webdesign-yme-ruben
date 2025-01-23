@@ -33,7 +33,7 @@ h1 {
     grid-area: n;
     text-align: center;
     position: sticky;
-    top: 7%;
+    top: 9%;
 }
 .nav  ul{
    display: flex;
