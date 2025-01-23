@@ -1,0 +1,22 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    color: rgb(0, 0, 0);
+}
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+  "a a"
+  "n n"
+  "b c"
+  "d e"
+  "f g"
+  "h i"
+  "u u";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto auto auto;
+    gap: 0;
+}
