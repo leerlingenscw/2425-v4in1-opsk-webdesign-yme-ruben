@@ -1,15 +1,12 @@
-body {
-  background-color: rgb(255, 255, 255);
-  margin: 0
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 h1 {
   color: rgb(0, 0, 0);
   text-align: center;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-p {
-  font-family: verdana;
-  font-size: 20px;
 }
 .grid-container {
   display: grid;
@@ -19,10 +16,10 @@ p {
   "c c d"
   "f e e"
   "footer footer footer";
-  grid-template-columns:  1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto auto auto auto auto;
   gap: 0;
-  align-items: start;
+  align-items: stretch;
   min-height: 100vh;
 }
 .grid-item1 {
@@ -35,11 +32,33 @@ p {
   min-height: 7em;
 }
 .grid-item2 {
+  grid-area: b;
+  text-align: center;
+}
+.grid-item2  ul{
+ display: flex;
+ justify-content: center;
+ gap: 1em; 
  text-align: center;
- grid-area: b;
- background-color: blue;
- margin: 0;
- border: 0;
+ background-color: grey;
+ padding: 0px;
+ margin: 0px;
+ list-style-type: none;
+ overflow: hidden;
+ min-width: 100%;
+}
+.grid-item2 a{
+ color:white;
+ display:block;
+ text-decoration:none; 
+ text-align:center;
+ padding:15px;
+}
+.grid-item2 a:hover{
+  background-color: rgb(80, 80, 80);
+}
+.grid-item2 li {
+  float: none;
 }
 .grid-item3 {
   text-align: center;
