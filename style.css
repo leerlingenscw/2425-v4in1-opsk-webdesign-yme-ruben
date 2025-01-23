@@ -5,8 +5,6 @@ html, body {
 }
 h1 {
   color: rgb(0, 0, 0);
-  text-align: center;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 .grid-container {
   display: grid;
@@ -17,7 +15,7 @@ h1 {
   "f e e"
   "footer footer footer";
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto auto auto auto auto;
+  grid-template-rows: auto auto 1fr 1fr auto;
   gap: 0;
   align-items: stretch;
   min-height: 100vh;
@@ -30,6 +28,7 @@ h1 {
   margin: 0;
   border: 0;
   min-height: 5em;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 .grid-item2 {
   grid-area: b;
