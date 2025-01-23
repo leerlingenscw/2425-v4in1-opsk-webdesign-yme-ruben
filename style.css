@@ -35,6 +35,7 @@ h1 {
   grid-area: b;
   text-align: center;
   position: sticky;
+  top: 9%;
 }
 .grid-item2  ul{
  display: flex;

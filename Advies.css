@@ -33,7 +33,8 @@ h1 {
     grid-area: n;
     text-align: center;
     position: sticky;
-  }
+    top: 9%;
+}
 .nav  ul{
    display: flex;
    justify-content: center;
@@ -65,8 +66,8 @@ h1 {
     grid-area: b;
 }
 .img{
-    display: grid;
-    place-items: center;
+    display: block;
+    margin: auto;
     grid-area: c;
 }
 .footer {

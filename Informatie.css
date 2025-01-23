@@ -29,11 +29,14 @@ h1 {
   border: 0;
   min-height: 5em;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  position: sticky;
 }
 .nav {
     grid-area: n;
     text-align: center;
-  }
+    position: sticky;
+    top: 9%;
+}
 .nav  ul{
    display: flex;
    justify-content: center;
