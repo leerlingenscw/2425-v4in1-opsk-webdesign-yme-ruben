@@ -29,10 +29,12 @@ h1 {
   border: 0;
   min-height: 5em;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  position: sticky;
 }
 .grid-item2 {
   grid-area: b;
   text-align: center;
+  position: sticky;
 }
 .grid-item2  ul{
  display: flex;
