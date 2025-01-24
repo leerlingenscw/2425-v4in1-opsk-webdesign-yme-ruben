@@ -70,25 +70,24 @@ p {
 .grid-item3 {
   grid-area: c;
   margin: 3em;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .grid-item4 {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
   grid-area: d;
-  
 }
 .grid-item5 {
   text-align: right;
   grid-area: e;
   margin: 3em;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .grid-item6 {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
   grid-area: f;
 }
 .footer {

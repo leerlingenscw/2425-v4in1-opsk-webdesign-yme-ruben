@@ -3,9 +3,6 @@ html, body {
     margin: 0;
     padding: 0;
 }
-h1 {
-    color: rgb(0, 0, 0);
-}
 .grid-container {
     display: grid;
     grid-template-areas: 
@@ -19,7 +16,7 @@ h1 {
     min-height: 100vh;
 }
 .header {
-    text-align: center;
+  text-align: center;
   grid-area: a;
   background-color: #00AC62;
   top: 0;
@@ -64,6 +61,7 @@ h1 {
     text-align: center;
     margin: 15px;
     grid-area: b;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 .img{
     display: block;

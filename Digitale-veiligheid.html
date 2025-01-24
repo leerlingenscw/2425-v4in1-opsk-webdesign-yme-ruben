@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Informatie</title>
+    <link href="Digitale-veiligheid.css" rel="stylesheet" type="text/css" />
+</head>
+<main> 
+<div class="grid-container">
+    <header class="header"><h1>Digitale veiligheid</h1></header>
+    <nav class="nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Informatie.html">Informatie</a></li>
+            <li><a href="Advies.html">Advies</a></li>
+        </ul>
+    </nav>
+    <article class="art">
+        <h2>Vertrouwelijkheid</h2>
+            <p>
+    Authenticatie is een controle om te kijken of een gebruiker wel toegang heeft. Er zijn verschillende soorten authenticatie, onder anderen iets wat je weet (wachtwoord, pincode), dingen die je hebt (Sleutel of pas) en wat je bent (vingerafdruk, face ID).
+    Bij identificatie wordt er gevraagd wie je bent, dit kan je bijvoorbeeld aantonen door een gebruikersnaam en wachtwoord in te voeren.
+    Daarna vindt er een verificatie plaats, er wordt gekeken of je dat ook echt bent. Het systeem controleert dan of je wachtwoord en gebruikersnaam correct zijn. Er kan alleen verificatie plaatsvinden als gegevens van jou bekend zijn.
+    Een veiligere toegangscontrole is 2 vormen van authenticatie combineren, 2 step verificatie. Als je gebruikersnaam en wachtwoord dus kloppen, kan je bijvoorbeeld ook nog een code ontvangen om dubbel te verifiëren dat jij het bent. Bij betalingen met bankpas wordt dit al jaren gedaan, je hebt niet alleen je pinpas nodig, maar ook de pincode ervan. Met alleen een pinpas kan je niets, met alleen een pincode ook niet, je hebt ze allebei nodig.
+            </p>
+            <h2>Integriteit</h2>
+            <p>
+    Autorisatie is de controle hoeveel rechten jij hebt. Zo heeft een beheerder van een website meer rechten dan jij als gebruiker. Zo kan jouw docent (beheerder) in magister cijfers invoeren voor jou, terwijl jij als leerling (gebruiker) ze alleen maar kan bekijken. Autorisatie wordt ook wel de controle van de integriteit genoemd.
+            </p>
+            <ul>
+    De volgende dingen worden gecontroleerd:
+            </ul>
+            <li>
+Volledigheid
+Ontbreekt er iets?
+            </li>
+            <li>
+Relevantie
+Is de informatie afgestemd op het te bereiken doel?
+            </li>
+            <li>
+Betrouwbaarheid
+Klopt de informatie en komt het van een betrouwbare bron?
+            </li>
+            <li>
+Overzichtelijkheid
+Is de informatie goed gestructureerd?
+            </li> 
+            <li> 
+Beschikbaarheid
+Is de informatie op het juiste moment beschikbaar?
+            </li>
+            <li>
+Doelgerichtheid
+Is de informatie gericht op de gebruiker?
+            </li>
+            <p>
+Met integriteit kan je sommige schijven of mappen alleen beschikbaar maken voor gebruikers met een specifieke rol. Voor toegang tot deze bestanden hoeft niet apart ingelogd te worden, er wordt alleen gecontroleerd of je toegang hebt. Dit kan ingesteld worden via ‘file permissions’.
+Checksums: Als jij online een bestand met iemand wil delen, kan het dat het onderweg aangepast wordt. Als jij iets op het internet download, staat er vaak een checksum bij. Je kan dit dan vergelijken met het checksum van jouw gedownloade bestand, om te checken of het nog hetzelfde is.
+            </p>
+            <h2>
+IBAN: 
+            </h2>
+            <p>
+Als jij geld naar iemand over wilt maken, wil je zeker weten dat het de juiste persoon is, en dat je het naar de juiste IBAN overmaakt. Er zit een mechanisme in IBAN’s dat typefouten kan voorkomen, dat systeem het een controlegetal, en lijkt op een checksum.
+
+Het werkt als volgt:
+
+Verplaats de eerste vier karakters naar het einde van het IBAN.
+Vervang elke letter door twee cijfers, volgens het systeem A = 10, B = 11, enz.
+Bereken het getal modulo 97. Dit houdt in dat je het getal deelt door 97, en de restwaarde onthoudt.
+Als de restwaarde 1 is, dan gaat het om een valide IBAN.
+            </p>
+            <h2>
+Beschikbaarheid:
+            </h2>
+            <p>
+Als het gebeurt dat uw data niet (meer) beschikbaar is, moet er een back-up zijn. Een back-up maken kan op verschillende manieren. Bijvoorbeeld via een clouddienst als OneDrive, Google Drive of iCloud Drive. Maar ook op een USB-stick of een externe harde schijf. Bij die laatste twee is het belangrijk om ze niet op dezelfde locatie te bewaren als de data waarvan de back-up is
+Wij raden aan om gebruik te maken van ons 3-2-1-systeem voor back-ups: zorg er altijd voor dat er drie kopieën van de gegevens zijn, die op minimaal twee verschillende manieren worden opgeslagen, waarvan één kopie op een andere locatie wordt bewaard. Je kunt bijvoorbeeld je foto’s op je computer opslaan, geprinte versies thuis bewaren en een externe harde schijf met alle foto’s bij een vriend laten staan.
+Voor een toegangscontrole moeten er ook gegevens worden opgeslagen. Maar het opslaan (en verzenden) van wachtwoorden, pincodes, vingerafdrukken en dergelijke gegevens brengt ook uitdagingen met zich mee. Stel je voor dat het hackers lukt om een database met wachtwoorden in te zien. Het is dan ineens erg eenvoudig geworden om toegang te krijgen tot persoonlijke gegevens. De impact voor gebruikers is dan groot. Een wachtwoord kun je nog wijzigen, maar een vingerafdruk niet.
+Gevoelige bestanden kunnen versleuteld worden opgeslagen en/of verzonden. Hiervoor wordt er gebruikgemaakt van encryptie. Door middel van een sleutel, bijvoorbeeld een wachtwoord, kan de inhoud van een bestand wiskundig worden ‘gehusseld’.
+Voor het opslaan van wachtwoorden, vingerafdrukken en dergelijke wordt gebruikgemaakt van hashing. Hiermee wordt bijvoorbeeld het wachtwoord, net als bij encryptie, gehusseld. Bij hashing kun je echter niet meer terug naar het origineel. Heeft een kwaadwillende dus een database met gehashte wachtwoorden gestolen, dan kan hij nog steeds de originele wachtwoorden niet verkrijgen.
+Het komt toch wel eens voor dat websites of andere digitale diensten tijdelijk niet beschikbaar zijn. Dit kan te maken hebben met een zogenoemde DDoS-aanval. De afkorting DDoS staat voor Distributed Denial Of Service. Oftewel, een gecontroleerde aanval om een service (tijdelijk) uit te schakelen.
+Stel je voor dat de website van jouw school gemiddeld 100 aanvragen per minuut krijgt. Dit zullen vooral leerlingen zijn die hun rooster en/of huiswerk bekijken. Bij een DDoS-aanval worden er vele duizenden aanvragen per seconde gedaan. Een website kan dit niet allemaal verwerken en zal daardoor crashen.
+            </p>
+    </article>
+    <div class="footer">
+        &copy; Yme, Ruben | 2025 | <a href="mailto:135872@stanislascollege.net">gmail</a>
+    </div>
+</div>
+</main>
+</html>
