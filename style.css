@@ -68,7 +68,6 @@ p {
   float: none;
 }
 .grid-item3 {
-  text-align: center;
   grid-area: c;
   margin: 3em;
 }
@@ -81,7 +80,7 @@ p {
   
 }
 .grid-item5 {
-  text-align: center;
+  text-align: right;
   grid-area: e;
   margin: 3em;
 }
