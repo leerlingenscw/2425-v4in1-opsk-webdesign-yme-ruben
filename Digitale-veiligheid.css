@@ -30,7 +30,7 @@ html, body {
     grid-area: n;
     text-align: center;
     position: sticky;
-    top: 5%;
+    top: 8%;
 }
 .nav  ul{
     display: flex;

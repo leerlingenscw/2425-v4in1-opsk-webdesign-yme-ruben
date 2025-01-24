@@ -32,7 +32,7 @@ html, body {
     grid-area: nav;
     text-align: center;
     position: sticky;
-    top: 5%;
+    top: 8%;
     z-index: 500;
 }
 .nav  ul{
@@ -80,7 +80,7 @@ html, body {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: white;
     padding: 1em;
-    margin: 3em;
+    margin: 2em;
 }
     
 .art1::before {
@@ -132,7 +132,7 @@ html, body {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: white;
     padding: 1em;
-    margin: 3em;
+    margin: 2em;
 }
 .art2::before {
     content: "";
@@ -180,7 +180,7 @@ html, body {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: white;
     padding: 1em;
-    margin: 3em;
+    margin: 2em;
 }
 .art3::before {
     content: "";
