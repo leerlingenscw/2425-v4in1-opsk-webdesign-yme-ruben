@@ -6,23 +6,20 @@ html, body {
 .grid-container {
     display: grid;
     grid-template-areas: 
-  "a"
-  "n"
-  "b"
-  "c"
-  "d"
-  "e"
-  "f"
-  "g"
-  "u";
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+  "header"
+  "nav"
+  "art1"
+  "art2"
+  "art3"
+  "footer";
+    grid-template-columns: auto;
+    grid-template-rows: auto auto 1fr 1fr 1fr auto;
     gap: 0;
     min-height: 100vh;
 }
 .header {
   text-align: center;
-  grid-area: a;
+  grid-area: header;
   background-color: #00E1E6;
   top: 0;
   margin: 0;
@@ -32,10 +29,10 @@ html, body {
   z-index: 1000;
 }
 .nav {
-    grid-area: n;
+    grid-area: nav;
     text-align: center;
     position: sticky;
-    top: 11%;
+    top: 8%;
     z-index: 500;
 }
 .nav  ul{
@@ -64,10 +61,9 @@ html, body {
     float: none;
 }
 .art1 {
-    position: relative; /* Needed for absolute positioning of the overlay */
+    position: relative;
     text-align: center;
-    margin: 3em;
-    grid-area: b;
+    grid-area: art1;
     background-image: url("/images/0x0.webp");
     background-size: cover;
     background-position: center;
@@ -78,13 +74,13 @@ html, body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 2em;
     text-decoration: none;
     border-radius: 30px;
-    overflow: hidden; /* Prevents overlay from exceeding bounds */
+    overflow: hidden;
     z-index: 1;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: white;
+    padding: 3em;
 }
     
 .art1::before {
@@ -95,13 +91,14 @@ html, body {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
-    z-index: 1; /* Ensures overlay stays below text but above background */
+    z-index: 1;
 }
     
 .art1 h1,
 .art1 p {
     position: relative;
-    z-index: 3; /* Keeps text above the overlay */
+    z-index: 3;
+    color: white;
 }
 .art1 a{
     position: absolute;
@@ -110,20 +107,12 @@ html, body {
     width: 100%;
     height: 100%;
     text-decoration: none;
-    z-index: 2; /* Ensures the link covers the whole background */
-}
-.p {
-    grid-area: c;
-    font-size: 15px;
-    text-align: center;
-    padding: 3em;
-    margin: 0;
+    z-index: 2;
 }
 .art2 {
-    position: relative; /* Needed for absolute positioning of the overlay */
+    position: relative;
     text-align: center;
-    margin: 3em;
-    grid-area: d;
+    grid-area: art2;
     background-image: url("/images/0x0.webp");
     background-size: cover;
     background-position: center;
@@ -134,40 +123,43 @@ html, body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 2em;
-    color: white;
+    text-decoration: none;
     border-radius: 30px;
-    overflow: hidden; /* Prevents overlay from exceeding bounds */
+    overflow: hidden;
     z-index: 1;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    padding: 3em;
 }
 .art2::before {
-    content: ""; /* Required for the pseudo-element */
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Dark overlay (adjust opacity as needed) */
-    z-index: 1; /* Places it above the background image but below content */
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
 }
 .art2 h1,
 .art2 p {
     position: relative;
-    z-index: 2; /* Ensures text stays on top of the overlay */
+    z-index: 3;
+    color: white;
 }
-.p1 {
-    grid-area: e;
-    font-size: 15px;
-    text-align: center;
-    padding: 3em;
-    margin: 0;
+.art2 a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    z-index: 2;
 }
 .art3 {
-    position: relative; /* Needed for absolute positioning of the overlay */
+    position: relative;
     text-align: center;
-    margin: 3em;
-    grid-area: f;
+    grid-area: art2;
     background-image: url("/images/0x0.webp");
     background-size: cover;
     background-position: center;
@@ -178,38 +170,42 @@ html, body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 2em;
-    color: white;
+    text-decoration: none;
     border-radius: 30px;
-    overflow: hidden; /* Prevents overlay from exceeding bounds */
+    overflow: hidden;
     z-index: 1;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    padding: 3em;
 }
 .art3::before {
-    content: ""; /* Required for the pseudo-element */
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Dark overlay (adjust opacity as needed) */
-    z-index: 1; /* Places it above the background image but below content */
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
 }
 .art3 h1,
 .art3 p {
     position: relative;
-    z-index: 2; /* Ensures text stays on top of the overlay */
+    z-index: 3;
+    color: white;
 }
-.p2 {
-    grid-area: g;
-    font-size: 15px;
-    text-align: center;
-    padding: 3em;
-    margin: 0;
+.art3 a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    z-index: 2;
 }
 .footer {
   text-align: center;
-  grid-area: u;
+  grid-area: footer;
   background-color: #00E1E6;
   bottom: 0;
   min-height: 3em

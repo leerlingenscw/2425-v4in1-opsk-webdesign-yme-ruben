@@ -39,7 +39,7 @@ p {
   grid-area: b;
   text-align: center;
   position: sticky;
-  top: 11%;
+  top: 8%;
 }
 .grid-item2  ul{
  display: flex;
