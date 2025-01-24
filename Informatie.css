@@ -159,7 +159,7 @@ html, body {
 .art3 {
     position: relative;
     text-align: center;
-    grid-area: art2;
+    grid-area: art3;
     background-image: url("/images/0x0.webp");
     background-size: cover;
     background-position: center;
