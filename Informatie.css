@@ -68,8 +68,8 @@ html, body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    width: 90%;
-    height: 70%;
+    width: 95%;
+    height: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -80,8 +80,8 @@ html, body {
     z-index: 1;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: white;
-    padding: 3em;
-    margin: 3em;
+    padding: 1em;
+    margin: 2em;
 }
     
 .art1::before {
@@ -118,8 +118,8 @@ html, body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    width: 90%;
-    height: 70%;
+    width: 95%;
+    height: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -130,8 +130,8 @@ html, body {
     z-index: 1;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: white;
-    padding: 3em;
-    margin: 3em;
+    padding: 1em;
+    margin: 2em;
 }
 .art2::before {
     content: "";
@@ -166,8 +166,8 @@ html, body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    width: 90%;
-    height: 70%;
+    width: 95%;
+    height: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -178,8 +178,8 @@ html, body {
     z-index: 1;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: white;
-    padding: 3em;
-    margin: 3em;
+    padding: 1em;
+    margin: 2em;
 }
 .art3::before {
     content: "";
