@@ -16,9 +16,10 @@ p {
   "b b b"
   "c c d"
   "f e e"
+  "n n n"
   "footer footer footer";
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto auto auto auto auto;
+  grid-template-rows: auto auto auto auto 1fr auto;
   gap: 0;
   align-items: stretch;
   min-height: 100vh;
