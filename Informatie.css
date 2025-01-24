@@ -64,7 +64,7 @@ html, body {
     position: relative;
     text-align: center;
     grid-area: art1;
-    background-image: url("/images/0x0.webp");
+    background-image: url("/images/hacker.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -74,14 +74,13 @@ html, body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-decoration: none;
     border-radius: 30px;
     overflow: hidden;
     z-index: 1;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: white;
     padding: 1em;
-    margin: 2em;
+    margin: 3em;
 }
     
 .art1::before {
@@ -100,6 +99,8 @@ html, body {
     position: relative;
     z-index: 3;
     color: white;
+    text-align: center;
+    text-decoration: none;
 }
 .art1 a{
     position: absolute;
@@ -114,7 +115,7 @@ html, body {
     position: relative;
     text-align: center;
     grid-area: art2;
-    background-image: url("/images/0x0.webp");
+    background-image: url("/images/bedreigingen.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -131,7 +132,7 @@ html, body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: white;
     padding: 1em;
-    margin: 2em;
+    margin: 3em;
 }
 .art2::before {
     content: "";
@@ -179,7 +180,7 @@ html, body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: white;
     padding: 1em;
-    margin: 2em;
+    margin: 3em;
 }
 .art3::before {
     content: "";
